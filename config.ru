@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './spanishphon_app'
-run SpanishphonApp
+require ::File.expand_path('../spanishphon', __FILE__)
+run Spanishphon
