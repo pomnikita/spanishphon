@@ -4,4 +4,4 @@ require 'bundler'
 Bundler.require
 
 require './spanishphon_app'
-run SpanishApp
+run SpanishphonApp
