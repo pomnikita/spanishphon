@@ -1,6 +1,7 @@
-require 'sinatra'
+require 'rubygems'
+require 'sinatra/base'
 
-class Spanishphon
+class Spanishphon < Sinatra::Base
   get '/' do
     'Spanish app'
   end
