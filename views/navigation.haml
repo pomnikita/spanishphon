@@ -1,0 +1,5 @@
+%h2
+  Упражнения
+%ul
+  - [(1..9).to_a, '10-1', '10-2', (11..31).to_a].flatten.each do |ind|
+    %li= link_to_exercise ind, HEADERS[ind.to_s]

@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %title Spanish phonetic exercises
+    %link{:href => "/css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %meta{:'http-equiv' => "Content-Type",  :content => "text/html; charset=utf-8"}
+  %body
+    #wrapper
+      %header
+        %h1 Spanish Phonetics
+        %h2.title= @header
+      #sidebar
+        .widget= render(:haml, :navigation)
+      #content
+        .hentry
+          #audio= player
+          = yield
+      .clear
+      #footer
+        %p Material by Lubov Shchukareva
+        %p Html version by Nikita Pomyashchiy
+        %p Template is designed by Mohd Huzairy from  <a href="http://www.mentariworks.com">MentariWorks</a>
+    	
+      
