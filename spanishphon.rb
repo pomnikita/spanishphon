@@ -11,11 +11,11 @@ class Spanishphon < Sinatra::Base
   
   get '/exercises/:id' do
     @header = HEADERS[params[:id]]
-    haml "exercises/#{params[:id]}".to_sym
+    haml "exercises/#{params[:id]}".to_sym rescue not_found
   end
   
   not_found do
-    redirect to('/exercises/1')
+    redirect to('/')
   end
     
   helpers do
