@@ -2,7 +2,6 @@
 require 'rubygems'
 require 'sinatra'
 
-
 class Spanishphon < Sinatra::Base
   
   get '/' do
@@ -30,8 +29,6 @@ class Spanishphon < Sinatra::Base
     def player
       track_id = TRACKS[params[:id].to_s]
       "<iframe width='100%' height='166' scrolling='no frameborder='no' src='http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{track_id}&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700'></iframe>"
-      
-      
     end
   end
   
